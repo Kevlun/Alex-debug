@@ -15,7 +15,7 @@ import {
 // Importera atomer och "states" från recoil.
 import { useRecoilState, useRecoilValue } from "recoil";
 import { cartState } from "../recoil/cart/atom";
-import { productsState } from "../recoil/products/productsAtom";
+import { productsState } from "../recoil/products/ProductsAtom";
 
 // Importerar från "product"/"cart" med recoil.
 function Products() {
