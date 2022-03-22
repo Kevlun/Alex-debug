@@ -25,6 +25,7 @@ function Cart() {
   const cart = useRecoilValue(cartState);
   console.log(cart);
   // const { totalItems, totalPrice } = useRecoilValue(cartStatus);
+  const { totalItems, totalPrice } = useRecoilValue(cartStatus);
   const removeItem = useSetRecoilState(removeItemSelector);
 
   return (
@@ -64,7 +65,7 @@ function Cart() {
               </div>
             </Box>
           ))}
-          {/* <Text fontSize="larger" fontWeight="bold" textAlign="center">
+          <Text fontSize="larger" fontWeight="bold" textAlign="center">
             Amount of products: {totalItems}
           </Text>
           <Text fontSize="larger" fontWeight="bold" textAlign="center">
@@ -73,7 +74,7 @@ function Cart() {
           <Button border="1px" fontWeight="bold" as={Link} to="/products">
             {" "}
             Continue Shopping{" "}
-          </Button> */}
+          </Button>
           <Button
             border="1px"
             fontWeight="bold"
