@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ProductsBlock from "../components/blocks/Products";
+import ProductsBlock from "../components/Products";
 import { Container, Heading, Stack, Flex } from "@chakra-ui/react";
-import { productsState } from "../components/recoil/products/productsAtom";
+import { productsState } from "../recoil/products/ProductsAtom";
 import { useRecoilValue } from "recoil";
 
 function Products() {

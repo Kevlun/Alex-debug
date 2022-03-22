@@ -1,6 +1,6 @@
 import { useRecoilValue, useRecoilState } from "recoil";
 import { Link } from "react-router-dom";
-import { productsState } from "../components/recoil/products/productsAtom";
+import { productsState } from "../recoil/products/ProductsAtom";
 import {
   Box,
   Heading,
@@ -10,7 +10,7 @@ import {
   Stack,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { cartState } from "../components/recoil/cart/atom";
+import { cartState } from "../recoil/cart/atom"
 import { useParams } from "react-router-dom";
 import React, { useState } from "react";
 
